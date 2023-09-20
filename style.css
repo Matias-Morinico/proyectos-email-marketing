@@ -1,0 +1,115 @@
+/* Estilos globales */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Encabezado */
+
+.header {
+  .h2 {
+    color: rgb(245, 5, 85);
+    font-size: 20px;
+    padding: 20px;
+  }
+}
+
+/* Grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* align-items: center; */
+}
+
+.content {
+  position: relative; /* Agregamos posición relativa */
+  background-color: blueviolet;
+  color: white;
+  padding: 10px;
+  /* width: calc(800px + (436px)); */
+  width: 100%;
+  max-width: 100%;
+}
+h1 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.info {
+  padding: 20px;
+}
+
+img {
+  height: 400px;
+  position: absolute; /* Posición absoluta para la imagen */
+  top: 0;
+  left: 60%;
+  z-index: 1;
+  margin-top: -40px;
+}
+
+button {
+  margin: 10px;
+  margin-left: 55px;
+}
+
+.explore {
+  padding: 10px;
+  background-color: rgb(255, 0, 85);
+  position: absolute;
+  margin-top: -25px;
+}
+
+a {
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .content {
+    right: 20px;
+  }
+
+  h1 {
+    font-size: 25px; /* Cambia el tamaño del título en pantallas pequeñas */
+  }
+
+  p {
+    font-size: 15px; /* Cambia el tamaño del texto en pantallas pequeñas */
+  }
+
+  .info {
+    padding: 20px; /* Ajusta el espaciado interno para pantallas pequeñas */
+  }
+  img {
+    margin-top: -15px;
+    height: 255px;
+    width: 150px;
+  }
+
+  .explore {
+    font-size: 10px;
+    padding: 5px;
+    margin-top: -15px;
+    right: 60%;
+    width: 30%;
+  }
+  a {
+    font-size: 10px;
+    padding: 10px;
+  }
+}
